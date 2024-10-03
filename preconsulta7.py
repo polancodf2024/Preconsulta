@@ -5,6 +5,8 @@ from io import BytesIO
 from datetime import datetime
 import smtplib
 import ssl
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 # Función para enviar el correo electrónico
 def enviar_correo(destinatario, nombre):
@@ -13,13 +15,18 @@ def enviar_correo(destinatario, nombre):
     remitente = "abcdf2024dfabc@gmail.com"
     password = "hjdd gqaw vvpj hbsy"  # Tu contraseña de aplicación
 
-    mensaje = f"""\
-Subject: Registro Completo
-
+    # Crear el mensaje con la codificación adecuada
+    mensaje = MIMEMultipart()
+    mensaje['From'] = remitente
+    mensaje['To'] = destinatario
+    mensaje['Subject'] = "Registro Completo"
+    
+    cuerpo = f"""\
 Hola {nombre},
 
 Gracias por completar tu registro en el Instituto Nacional de Cardiología Ignacio Chávez.
 """
+    mensaje.attach(MIMEText(cuerpo, 'plain', 'utf-8'))
 
     # Establecer conexión segura con el servidor SMTP
     context = ssl.create_default_context()
@@ -28,7 +35,7 @@ Gracias por completar tu registro en el Instituto Nacional de Cardiología Ignac
         with smtplib.SMTP(smtp_server, port) as server:
             server.starttls(context=context)  # Iniciar una conexión segura
             server.login(remitente, password)  # Autenticarse en el servidor
-            server.sendmail(remitente, destinatario, mensaje.encode('utf-8'))  # Enviar el correo
+            server.sendmail(remitente, destinatario, mensaje.as_string())  # Enviar el correo
         return True
     except Exception as e:
         print(f"Error al enviar el correo: {e}")
