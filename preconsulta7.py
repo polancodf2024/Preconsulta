@@ -104,7 +104,7 @@ if st.button("Enviar"):
         
         # Enviar el correo electrónico al usuario
         if enviar_correo(correo, nombre_completo):
-            st.success("¡Registro completado y correo enviado! Los datos han sido guardados.")
+            st.success("¡Su cita de primera vez ha iniciado su proceso!. Revise su correo electrónico le hemos enviado algunas instrucciones. Una vez que las atienda, recibirá en el siguiente día habil su cita.")
         else:
             st.error("Registro completado, pero hubo un problema al enviar el correo.")
 
