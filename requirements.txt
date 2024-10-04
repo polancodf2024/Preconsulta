@@ -1,3 +1,8 @@
 streamlit
 pandas
+numpy
 openpyxl
+matplotlib
+geopy
+scikit-learn
+opencage
