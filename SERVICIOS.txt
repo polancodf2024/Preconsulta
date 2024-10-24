@@ -1,0 +1,22 @@
+060101|Aglutininas irregulares|BANCO DE SANGRE
+060102|Antígeno-anticuerpo VIH|BANCO DE SANGRE
+060103|Antígeno de superficie y anticuerpo core del virus de la hepatitis B|BANCO DE SANGRE
+000000|CARDIONEUMOLOGÍA|BANCO DE SANGRE
+082001|Cateterismo derecho con prueba farmacológica|BANCO DE SANGRE
+082014|Cateterismo derecho|BANCO DE SANGRE
+082002|Broncoscopía estándar|BANCO DE SANGRE
+082003|Espirometría simple|BANCO DE SANGRE
+082004|Difusión|BANCO DE SANGRE
+082005|Sonda pleural, colocación|BANCO DE SANGRE
+082007|Biopsia por aspiración|BANCO DE SANGRE
+082015|Espirometría con pletismografía|BANCO DE SANGRE
+015003|Curación|CONSULTA EXTERNA
+015008|Consulta externa, primera vez|CONSULTA EXTERNA
+015009|Consulta externa, subsecuente|CONSULTA EXTERNA
+015010|Interconsulta a otras instituciones|CONSULTA EXTERNA
+015011|Preconsulta, incluye placa de tórax|CONSULTA EXTERNA
+015012|Consulta externa, interconsulta|CONSULTA EXTERNA
+050010|Ecocardiograma transtorácico bidimensional|ECOCARDIOGRAFÍA
+050011|Ecocardiograma transesofágico bidimensional|ECOCARDIOGRAFÍA
+050012|Ecocardiograma Fetal|ECOCARDIOGRAFÍA
+050115|Ecocardiograma transtorácico con estrés farmacologico|ECOCARDIOGRAFÍA
